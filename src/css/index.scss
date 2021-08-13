@@ -10,10 +10,12 @@ body {
 }
 
 .root {
-  padding: 36px;
+  width: 40vw;
+  padding-top: 36px;
   display: flex;
-  align-items: center;
+  margin: 0 auto;
   justify-content: center;
+  flex-direction: column;
 }
 
 .title {
