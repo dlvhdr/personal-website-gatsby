@@ -22,6 +22,9 @@ const IndexPage = (): React.ReactNode => {
           player
         </p>
       </div>
+      <div className="under-construction">
+        <p>🚧 Under Construction 🚧</p>
+      </div>
     </main>
   );
 };

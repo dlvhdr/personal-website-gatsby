@@ -7,6 +7,7 @@ body {
   font-kerning: normal;
   padding: 0;
   margin: 0;
+  background: rgb(233, 233, 233);
 }
 
 .root {
@@ -18,6 +19,19 @@ body {
   flex-direction: column;
 }
 
+.description {
+  background: white;
+  box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
 .title {
   font-size: 48px;
+  text-align: center;
+}
+
+.under-construction {
+  text-align: center;
+  padding: 50px;
 }
