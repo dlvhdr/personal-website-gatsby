@@ -1,5 +1,21 @@
 @import './typography.scss';
 
+$bg-color: #d8dcff;
+$black-color: #040f0f;
+$primary-color: #d7907b;
+
+$big-font-size: 64px;
+$regular-font-size: 32px;
+$caption-font-size: 20px;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', serif;
   font-weight: normal;
@@ -7,31 +23,54 @@ body {
   font-kerning: normal;
   padding: 0;
   margin: 0;
-  background: rgb(233, 233, 233);
+  background: $bg-color;
+  font-size: $regular-font-size;
 }
 
 .root {
-  width: 40vw;
-  padding-top: 36px;
+  width: max(24px, 45vw);
   display: flex;
   margin: 0 auto;
-  justify-content: center;
   flex-direction: column;
 }
 
-.description {
-  background: white;
-  box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 20%);
-  border-radius: 4px;
-  padding: 12px 24px;
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 0.625em;
+  gap: 24px;
+  padding-block: 36px;
+  margin-bottom: 84px;
+}
+
+nav p:first-child {
+  flex-grow: 1;
+  font-family: 'Poppins-Bold';
+  letter-spacing: 0.1em;
+}
+
+.primary {
+  color: $primary-color;
+  font-family: 'Poppins-Bold';
 }
 
 .title {
-  font-size: 48px;
-  text-align: center;
+  font-family: 'Poppins-Bold';
+  font-size: 2em;
+  margin-bottom: 35px;
+}
+.description {
+  margin-bottom: 174px;
 }
 
 .under-construction {
   text-align: center;
-  padding: 50px;
+  font-size: 0.625em;
+  border: 1px dashed $black-color;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: flex;
+  align-self: center;
+  letter-spacing: 0.1em;
 }

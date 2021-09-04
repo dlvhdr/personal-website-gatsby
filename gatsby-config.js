@@ -7,6 +7,14 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-prettier-eslint',
       options: {
         prettier: {
