@@ -31,7 +31,9 @@ const IndexPage = (): React.ReactNode => {
         <p>I love to build websites and learn new stuff.</p>
       </div>
       <div className="under-construction">
-        <p>🚧 Under Construction 🚧</p>
+        <span className="sign">🚧</span>
+        <p>Under Construction</p>
+        <span className="sign">🚧</span>
       </div>
     </main>
   );

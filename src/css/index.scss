@@ -4,9 +4,7 @@ $bg-color: #d8dcff;
 $black-color: #040f0f;
 $primary-color: #d7907b;
 
-$big-font-size: 64px;
-$regular-font-size: 32px;
-$caption-font-size: 20px;
+$font-size: 32px;
 
 *,
 *::after,
@@ -24,11 +22,11 @@ body {
   padding: 0;
   margin: 0;
   background: $bg-color;
-  font-size: $regular-font-size;
+  font-size: $font-size;
 }
 
 .root {
-  width: max(24px, 45vw);
+  padding: 32px 22.5vw;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -40,7 +38,6 @@ nav {
   width: 100%;
   font-size: 0.625em;
   gap: 24px;
-  padding-block: 36px;
   margin-bottom: 84px;
 }
 
@@ -73,4 +70,26 @@ nav p:first-child {
   display: flex;
   align-self: center;
   letter-spacing: 0.1em;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    padding: 32px 48px;
+  }
+
+  nav {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 30px;
+  }
 }
